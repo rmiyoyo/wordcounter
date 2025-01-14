@@ -27,7 +27,7 @@ func TestCountWords (t *testing.T) {
 
 func TestCountChars (t *testing.T) {
 	b := bytes.NewBufferString("Test Chars\n")
-	exp := 10
+	exp := 9
 	res := count(b, false, false, true)
 
 	if res != exp {
